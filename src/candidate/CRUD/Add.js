@@ -15,7 +15,7 @@ export default class AddCandidate extends Component {
       }
     }
   }
-  
+
   postCandidates = async () => {
     console.log(JSON.stringify(this.state.candidate));
     let response = await fetch(url, {

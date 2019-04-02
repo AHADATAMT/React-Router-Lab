@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router'
-import AddCandidate from './AddCandidate'
-import ViewJobDetail from './ViewJobDetail'
-import ViewJobs from './ViewJobs'
+import AddCandidate from './CRUD/Add'
+import ViewJobDetail from './CRUD/view/ViewDetail'
+import ViewJobs from './CRUD/view/Overview'
 
 export default class Routes extends Component {
     render() {
@@ -10,7 +10,8 @@ export default class Routes extends Component {
             <Switch>
                 <Route exact path="/" component={ViewJobs} />
                 <Route path="/view/candidate/:id" component={ViewJobDetail} />
-                <Route path="/add/" component={AddCandidate} />
+                <Route path="/edit/candidate/:id" component={AddCandidate} />
+                <Route path="/add" component={AddCandidate} />
             </Switch>
         )
     }
