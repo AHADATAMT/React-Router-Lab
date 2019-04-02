@@ -3,18 +3,18 @@
 - Created with passion by `bmthang94`
 
 ## Required User Stories:
-- [ ] Milestone 1: Generate Fake Data
-- [ ] Milestone 2: Setting Up Routes
-- [ ] Milestone 3: Create Component for the View declare in your Routes.js
-- [ ] Milestone 4: Set up your own server with json-server:
-- [ ] Milestone 5: Query from json-server instead
-- [ ] Milestone 5: Implement Delete and Update Feature:
+- [x] Milestone 1: Generate Fake Data
+- [x] Milestone 2: Setting Up Routes
+- [x] Milestone 3: Create Component for the View declare in your Routes.js
+- [x] Milestone 4: Set up your own server with json-server:
+- [x] Milestone 5: Query from json-server instead
+- [x] Milestone 5: Implement Delete and Update Feature:
 
 ## Optional User Stories:
 Adding Form validation when Adding new candidate, or when Update Existing Candidate:
-- [ ] First and Last Name field is Required
-- [ ] Last Name & First Name between 3 & 15 characters.
-- [ ] Email field (if not have, create one) should check best to make sure it’s an email (have “@”, have .com/.net/ in the end …)
+- [x] First and Last Name field is Required
+- [x] Last Name & First Name between 3 & 15 characters.
+- [x] Email field (if not have, create one) should check best to make sure it’s an email (have “@”, have .com/.net/ in the end …)
 
 
 ## Time Spent and Lessons Learned

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Delete from '../Delete'
 import Detail from './ViewDetail'
-import Update from '../Update'
 
 
 
@@ -44,7 +43,7 @@ export default class ViewJobs extends Component {
                 <p> {candidate.first_name} <br /> {candidate.lastJob}</p>
                 <p>
                   <Detail {...candidate} />
-                  <Update {...candidate} />
+                  <Link to={`/edit/candidate/${candidate.id}`}>Update</Link>
                   <Delete {...candidate} getCandidates={this.getCandidates} />
                 </p>
               </Col>

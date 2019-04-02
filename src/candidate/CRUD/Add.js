@@ -12,6 +12,7 @@ export default class AddCandidate extends Component {
         lastJob: '',
         skill: '',
         profilePic: '',
+        email:'',
       }
     }
   }
@@ -46,10 +47,15 @@ export default class AddCandidate extends Component {
             <Form className="mt-5">
               <Row from>
                 <FormGroup>
-                  <Input type="text" required name="first_name" id="first_name" placeholder="First name" value={this.state.candidate.first_name} onChange={this.onChangeValue} />
+                  <Input type="text" required name="first_name" maxlength={15} minlength="3" id="first_name" placeholder="First name" value={this.state.candidate.first_name} onChange={this.onChangeValue} />
                 </FormGroup>
                 <FormGroup>
-                  <Input type="text" required name="last_name" id="last_name" placeholder="Last name" value={this.state.candidate.last_name} onChange={this.onChangeValue} />
+                  <Input type="text" required name="last_name" maxlength={15} minlength={3} id="last_name" placeholder="Last name" value={this.state.candidate.last_name} onChange={this.onChangeValue} />
+                </FormGroup>
+              </Row>
+              <Row from>
+                <FormGroup>
+                  <Input type="email" required name="email" id="email" placeholder="Email" value={this.state.candidate.email} onChange={this.onChangeValue} />
                 </FormGroup>
               </Row>
               <Row from>
@@ -66,7 +72,7 @@ export default class AddCandidate extends Component {
                   <Input type="file" required name="profilePic" id="profilePic" accept="image/x-png,image/gif,image/jpeg" onChange={this.onChangeValue} />
                 </FormGroup>
               </Row>
-              <Button onClick={this.postCandidates}>Submit</Button>
+              <Button type="submit" onClick={this.postCandidates}>Submit</Button>
             </Form>
           </Col>
         </Row>

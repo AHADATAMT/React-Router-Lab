@@ -29,6 +29,7 @@ export default class ViewJobDetail extends Component {
               <Col sm={3}>
                 <img className="w-100" src={this.state.candidate.profilePic} />
                 <p> {this.state.candidate.first_name} {this.state.candidate.last_name}</p>
+                <p> {this.state.candidate.email}</p>
                 <p> {this.state.candidate.lastJob} <br /> {this.state.candidate.skill}</p>
               </Col>
             </Row>
