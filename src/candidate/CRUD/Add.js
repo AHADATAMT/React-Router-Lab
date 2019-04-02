@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Row, Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Container, Row, Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 const url = "http://localhost:3001/candidate";
 
 export default class AddCandidate extends Component {
